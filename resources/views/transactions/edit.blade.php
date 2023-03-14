@@ -1,6 +1,6 @@
 @extends('layouts.app', ['title' => 'Edit Transaksi'])
 
-@section('layouts.content')
+@section('content')
     <div class="card">
         <div class="card-header">
             <h5>Edit Transaksi</h5>

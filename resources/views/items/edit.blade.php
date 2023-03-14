@@ -1,6 +1,6 @@
 @extends('layouts.app', ['title' => 'Edit Barang'])
 
-@section('layouts.content')
+@section('content')
     <div class="card">
         <div class="card-header">
             <h5>Edit Barang</h5>
@@ -35,7 +35,7 @@
                             <option value="Barang">Barang</option>
                             <option value="Jasa">Jasa</option>
                         </select>
-                        <div class="form-text"><i>Jika tidak ada rubahan <b>tidak usah dipilih</b> kembali</i></div>
+                        <div class="form-text"><i>Pilih kembali <b>Jenis Barang</b> yang akan dimasukan</i></div>
                     </div>
                 </div>
                 <div class="mb-3">
