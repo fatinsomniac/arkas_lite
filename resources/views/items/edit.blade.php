@@ -31,7 +31,7 @@
                     <label class="form-label">Jenis Barang</label>
                     <div class="col-6">
                         <select name="item_category" class="form-select" aria-label="Default select example">
-                            <option disabled selected value="{{ $item->item_category }}">----pilih jenis barang----</option>
+                            <option value="{{ $item->item_category }}" selected>--pilih jenis barang--</option>
                             <option value="Barang">Barang</option>
                             <option value="Jasa">Jasa</option>
                         </select>

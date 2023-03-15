@@ -42,7 +42,8 @@ class ItemController extends Controller
         $item = Item::where('uuid', $uuid)->first();
 
         return view('items.edit', [
-            'item' => $item
+            'item' => $item,
+            'items' => Item::orderBy('id', 'desc')->get()
         ]);
     }
 
