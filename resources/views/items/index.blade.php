@@ -37,6 +37,9 @@
                             <option value="Barang">Barang</option>
                             <option value="Jasa">Jasa</option>
                         </select>
+                        @error('item_category')
+                            {{ $message }}
+                        @enderror
                     </div>
                 </div>
                 <div class="mb-3">
