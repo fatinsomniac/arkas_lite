@@ -31,9 +31,8 @@
                     <label class="form-label">Jenis Barang</label>
                     <div class="col-6">
                         <select name="item_category" class="form-select" aria-label="Default select example">
-                            <option value="{{ $item->item_category }}" selected>--pilih jenis barang--</option>
-                            <option value="Barang">Barang</option>
-                            <option value="Jasa">Jasa</option>
+                            <option value="Barang" {{ $item->item_category == 'Barang' ? 'selected' : '' }}>Barang</option>
+                            <option value="Jasa" {{ $item->item_category == 'Jasa' ? 'selected' : '' }}>Jasa</option>
                         </select>
                         <div class="form-text"><i>Pilih kembali <b>Jenis Barang</b> yang akan dimasukan</i></div>
                     </div>
