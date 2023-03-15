@@ -29,6 +29,9 @@
                                 <option value="{{ $activity->id }}">{{ $activity->activity_name }}</option>
                             @endforeach
                         </select>
+                        @error('activity_id')
+                            <p style="color:red;">{{ $message }}</p>
+                        @enderror
                     </div>
                 </div>
                 <div class="mb-3">
@@ -40,6 +43,9 @@
                                 <option value="{{ $item->id }}">{{ $item->item_name }}</option>
                             @endforeach
                         </select>
+                        @error('item_id')
+                            <p style="color:red;">{{ $message }}</p>
+                        @enderror
                     </div>
                 </div>
                 <div class="mb-3">
