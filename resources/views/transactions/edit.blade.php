@@ -23,9 +23,8 @@
                     <label class="form-label">Nama Kegiatan</label>
                     <div class="col-6">
                         <select name="activity_id" class="form-select" aria-label="Default select example">
-                            <option disabled selected>----pilih jenis barang----</option>
                             @foreach ($activities as $activity)
-                                <option value="{{ $activity->id }}">{{ $activity->activity_name }}</option>
+                                <option value="{{ $activity->id }}" {{ $activity->id == $transaction->activity_id ? 'selected' : '' }}>{{ $activity->activity_name }}</option>
                             @endforeach
                         </select>
                         <div class="form-text"><i>Pilih kembali <b>Nama Kegiatan</b> yang akan dimasukan</i></div>
@@ -35,9 +34,8 @@
                     <label class="form-label">Nama Barang</label>
                     <div class="col-6">
                         <select name="item_id" class="form-select" aria-label="Default select example">
-                            <option disabled selected>----pilih jenis barang----</option>
                             @foreach ($items as $item)
-                                <option value="{{ $item->id }}">{{ $item->item_name }}</option>
+                                <option value="{{ $item->id }}" {{ $item->id == $transaction->item_id ? 'selected' : '' }}>{{ $item->item_name }}</option>
                             @endforeach
                         </select>
                         <div class="form-text"><i>Pilih kembali <b>Nama Barang y</b>ang akan dimasukan</i></div>
